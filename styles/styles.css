@@ -9,6 +9,9 @@ h1 {
         margin-right: auto;
         padding-top: 10px;
     }
+    #kug4kids-logo {
+        padding-bottom: 20px;
+    }
 }
 @media only screen and (min-width: 768px) {
     #kug-logo {
@@ -16,6 +19,39 @@ h1 {
     }
     #kug4kids-logo {
         padding-top: 20px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    #lvl-ohne {
+        display: none;
+    }
+    #lvl-mit {
+        display: none;
+    }
+    #lvl-mit-2 {
+        display: block;
+    }
+}
+@media only screen and (max-width: 450px) and (min-width: 376px) {
+    #lvl-ohne {
+        display: none;
+    }
+    #lvl-mit {
+        display: block;
+    }
+    #lvl-mit-2 {
+        display: none;
+    }
+}
+@media only screen and (min-width: 451px) {
+    #lvl-ohne {
+        display: block;
+    }
+    #lvl-mit {
+        display: none;
+    }
+    #lvl-mit-2 {
+        display: none;
     }
 }
 body {
@@ -31,13 +67,6 @@ body {
 }
 section {
     padding: 10px 50px;
-}
-.email {
-    color: black;
-}
-.email:hover {
-    color: black;
-    text-decoration: underline;
 }
 #unterueberschrift {
     text-align: center;

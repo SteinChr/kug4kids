@@ -13,49 +13,67 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-1">
+            <div class="col-lg-2 col-md 3">
                 <img src="images/kug-logo.png" alt="KUG Logo" width="80px" class="logos" id="kug-logo">
             </div>
-            <div class="col-md-8">
+            <div class="col-lg-8 col-md-6">
                 <h1>KUG 4 Kids</h1>
+                <p id="unterueberschrift"><b>Musikalische Früherziehung<br>an der Universität für Musik und darstellende Kunst Graz<br>für Kinder von 4 bis 7 Jahren</b></p>
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-2 col-md-3">
                 <img src="images/kug4kids-logo.png" alt="Kug4Kids-Logo" width="150px" class="logos" id="kug4kids-logo">
             </div>
         </div>
     </div>
-    <p>FOTO</p>
     <section class="section-1">
         <h2>Informationen</h2>
         <p>In den Kinderkursen der Universität für Musik und darstellende Kunst Graz haben Kinder von 4 bis 7 Jahren die
             Möglichkeit, in der Gruppe gemeinsam zu singen, zu tanzen und Instrumente auszuprobieren. Der Unterricht
             findet
             einmal wöchentlich statt und ist auch eine ideale Vorbereitung oder Ergänzung zum Instrumentalunterricht.
+            Der Kurs ermöglicht durch verschiedene musikalische Aktivitäten einen ersten, spielerischen Zugang zur Musik:
         </p>
+        <ul>
+            <li>Singen</li>
+            <li>Musizieren mit Orff-Instrumenten</li>
+            <li>Bewegen und Tanzen zur Musik</li>
+            <li>Bewusstes Hören</li>
+            <li>Erleben von Rhythmus über Bewegung und Sprache</li>
+            <li>Musikalisches, szenisches und tänzerisches Gestalten von Versen, Gedichten und Geschichten</li>
+            <li>Kennenlernen von Instrumenten</li>
+        </ul>
         <p>Beim Experimentieren, Improvisieren und Gestalten mit Instrumenten und der Stimme steht der kreative Umgang
             mit
             Musik im Mittelpunkt. Auf spielerische Art wird Musik in diesem Erfahrungsraum ganzheitlich erlebt.
         </p>
+        <p>Weiters bietet der Kurs Praxisgelegenheiten für Musikstudierende unter Supervision.</p>
     </section>
     <section class="section-2">
+        <h2 id="lvl-ohne">Lehrveranstaltungsleiterin</h2>
+        <h2 id="lvl-mit">Lehrveranstaltungs-<br>leiterin</h2>
+        <h2 id="lvl-mit-2">Lehr-<br>veranstaltungs-<br>leiterin</h2>
+        <p>Dr. Clivia Steinberger</p>
         <h2>Termine</h2>
         <p>Derzeit werden am Donnerstag Nachmittag mehrere Gruppen angeboten. Bei Bedarf werden auch Gruppen an anderen
             Wochentagen eingerichtet.</p>
         <p>Die Kurse beginnen am Anfang jedes Semesters (Oktober/März).</p>
         <h2>Ort</h2>
-        <p>Leonhardstraße 82-84 (Straßenbahnhaltestelle "Reiterkaserne")<br>8010 Graz</p>
+        <p>Universität für Musik und darstellende Kunst<br>Institut für Musikpädagogik<br>Leonhardstraße 82-84 (Straßenbahnhaltestelle "Reiterkaserne")<br>8010 Graz</p>
+        <h2>Kosten</h2>
+        <p>Der Lehrgangsbeitrag beträgt € 60,-- Euro pro Semester. Zusätzlich muss der ÖH-Beitrag inklusive Unfallversicherung in Höhe von € 19,50 Euro pro Semester entrichtet werden.</p>
+        <p>Die Kinder werden als außerordentliche Studierende an der KUG zugelassen, erhalten eine KUG-Card und haben alle Rechte und Pflichten als Studierende.</p>
     </section>
     <section class="section-3">
         <h2>Kontakt</h2>
-        <p>Bei Fragen oder Interesse kontaktieren Sie bitte <a
-                href="mailto:clivia.steinberger@kug.ac.at">clivia.steinberger@kug.ac.at</a>.</p>
-        <p>Ich interessiere mich für die Musikalische Früherziehung an der KUG, bitte senden Sie mir unverbindlich
-            weitere Informationen:
-        </p>
-        <form action="" method="POST">
-            <p><label for="email">E-Mail Adresse</label><br><input type="email" name="email"></p>
-            <p><label for="nachricht">Nachricht</label><br><textarea name="nachricht" id="textarea" cols="30"
+        <p>Bei Fragen oder Interesse kontaktieren Sie bitte das Sekretariat des Instituts für Musikpädagogik der KUG: 0316 389-3050</p>
+        <p>Gerne können Sie auch hier unverbindlich weitere Informationen anfordern:</p>
+        <form action="https://api.staticforms.xyz/submit" method="POST">
+            <input type="hidden" name="accessKey" value="53c16161-db57-4684-8373-0ac98674ee63">
+            <p><label for="email">E-Mail Adresse</label><br><input type="email" name="email" required></p>
+            <p><label for="message">Nachricht</label><br><textarea name="message" id="textarea" cols="30"
                     rows="5"></textarea></p>
+            <input type="hidden" name="replyTo" value="@">
+            <input type="hidden" name="redirectTo" value="https://steinchr.github.io/kug4kids/nachrichtgesendet">
             <button type="submit">Versenden</button>
         </form>
     </section>
