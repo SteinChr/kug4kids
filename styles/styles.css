@@ -32,10 +32,25 @@ body {
 section {
     padding: 10px 50px;
 }
-a {
+.email {
     color: black;
 }
-a:hover {
+.email:hover {
     color: black;
     text-decoration: underline;
+}
+#unterueberschrift {
+    text-align: center;
+    font-size: 24px;
+}
+.nachrichtgesendet-text {
+    padding-top: 20px;
+    font-size: 40px;
+}
+.nachrichtgesendet-logos {
+    padding-left: 20px;
+}
+.zurueck-zur-startseite {
+    text-align: center;
+    font-size: 25px;
 }
