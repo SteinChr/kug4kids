@@ -93,3 +93,12 @@ nav {
     margin-top: -60px;
     padding-bottom: 60px;
 }
+.impressum {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.impressum:hover {
+    text-decoration: none;
+    color: black;
+}
