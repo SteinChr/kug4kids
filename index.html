@@ -22,6 +22,24 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #05a3ff;">
+        <a class="navbar-brand" href="#"><img src="images/kug4kids-logo.png" alt="KUG4Kids" width="100px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="#home" data-toggle="collapse" data-target=".navbar-collapse.show">Home</a>
+            <a class="nav-link" href="#informationen" data-toggle="collapse" data-target=".navbar-collapse.show">Informationen</a>
+            <a class="nav-link" href="#leiterin" data-toggle="collapse" data-target=".navbar-collapse.show">Leiterin</a>
+            <a class="nav-link" href="#termine" data-toggle="collapse" data-target=".navbar-collapse.show">Termine</a>
+            <a class="nav-link" href="#ort" data-toggle="collapse" data-target=".navbar-collapse.show">Ort</a>
+            <a class="nav-link" href="#kosten" data-toggle="collapse" data-target=".navbar-collapse.show">Kosten</a>
+            <a class="nav-link" href="#kontakt" data-toggle="collapse" data-target=".navbar-collapse.show">Kontakt</a>
+          </div>
+        </div>
+      </nav>
+    <div class="nav-extra-div" id="home"></div>
     <div class="container">
         <div class="row">
             <div class="col-lg-2 col-md 3">
@@ -37,6 +55,7 @@
         </div>
     </div>
     <section class="section-1">
+        <div class="nav-extra-div" id="informationen"></div>
         <h2>Informationen</h2>
         <p>In den Kinderkursen der Universität für Musik und darstellende Kunst Graz haben Kinder von 4 bis 7 Jahren die
             Möglichkeit, in der Gruppe gemeinsam zu singen, zu tanzen und Instrumente auszuprobieren. Der Unterricht
@@ -60,21 +79,26 @@
         <p>Weiters bietet der Kurs Praxisgelegenheiten für Musikstudierende unter Supervision.</p>
     </section>
     <section class="section-2">
+        <div class="nav-extra-div" id="leiterin"></div>
         <h2 id="lvl-ohne">Lehrveranstaltungsleiterin</h2>
         <h2 id="lvl-mit">Lehrveranstaltungs-<br>leiterin</h2>
         <h2 id="lvl-mit-2">Lehr-<br>veranstaltungs-<br>leiterin</h2>
         <p>Dr. Clivia Steinberger</p>
+        <div class="nav-extra-div" id="termine"></div>
         <h2>Termine</h2>
         <p>Derzeit werden am Donnerstag Nachmittag mehrere Gruppen angeboten. Bei Bedarf werden auch Gruppen an anderen
             Wochentagen eingerichtet.</p>
         <p>Die Kurse beginnen am Anfang jedes Semesters (Oktober/März).</p>
+        <div class="nav-extra-div" id="ort"></div>
         <h2>Ort</h2>
         <p>Universität für Musik und darstellende Kunst<br>Institut für Musikpädagogik<br>Leonhardstraße 82-84 (Straßenbahnhaltestelle "Reiterkaserne")<br>8010 Graz</p>
+        <div class="nav-extra-div" id="kosten"></div>
         <h2>Kosten</h2>
         <p>Der Lehrgangsbeitrag beträgt € 60,-- Euro pro Semester. Zusätzlich muss der ÖH-Beitrag inklusive Unfallversicherung in Höhe von € 19,50 Euro pro Semester entrichtet werden.</p>
         <p>Die Kinder werden als außerordentliche Studierende an der KUG zugelassen, erhalten eine KUG-Card und haben alle Rechte und Pflichten als Studierende.</p>
     </section>
     <section class="section-3">
+        <div class="nav-extra-div" id="kontakt"></div>
         <h2>Kontakt</h2>
         <p>Bei Fragen oder Interesse kontaktieren Sie bitte das Sekretariat des Instituts für Musikpädagogik der KUG: 0316 389-3050</p>
         <p>Gerne können Sie auch hier unverbindlich weitere Informationen anfordern:</p>
@@ -97,6 +121,22 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
         integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 400, function(){
+                window.location.hash = hash;
+              });
+            }
+          });
+        });
+    </script>
 </body>
 
 </html>
